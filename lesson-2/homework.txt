@@ -1,0 +1,12 @@
+- Complex ( reference , non-primitive)
+- Math object
+- Number constructor
+- Number methods / properties
+- Type conversion and coercion
+- Conditional opeators
+- Nullish values , isNaN
+- Boolean constructor
+- Truthy and Falsy
+
+
+(minimum har bvitta mavzuga tushuncha)
