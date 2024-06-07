@@ -5,7 +5,7 @@
 - Number constructor
 - Number methods / properties
 - Type conversion and coercion
-- Conditional opeators
+- Conditional operators
 - Nullish values , isNaN
 - Boolean constructor
 - Truthy and Falsy
