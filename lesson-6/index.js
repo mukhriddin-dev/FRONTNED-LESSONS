@@ -149,14 +149,14 @@
 
 // for in , for of
 
-const obj={
-    color:'red',
-    width:100,
-    height:200,
-    weight:40000
-}
+// const obj={
+//     color:'red',
+//     width:100,
+//     height:200,
+//     weight:40000
+// }
 
-console.log(obj?.max?.length)
+// console.log(obj?.max?.length)
 
 // for(let key in obj){
 //     console.log(`${key}: ${obj[key]}`)
