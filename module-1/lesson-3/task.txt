@@ -1,0 +1,10 @@
+- Scopes
+- Loops
+- for loop
+- while
+- do while
+- break keyword
+- continue keyword
+- Functions (Declaration)
+
+[task 2024.06.03 8:00]
