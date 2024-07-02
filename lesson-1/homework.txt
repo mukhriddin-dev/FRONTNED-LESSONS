@@ -1,4 +1,0 @@
-1. https://dev.to da account ochasiz.
-2. JS Versialari haqida.
-3. JS Data types
-4. Variables (O'zgaruvchilar)

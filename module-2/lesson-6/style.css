@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    background-color:rgb(255, 210, 29);
+    flex-wrap: wrap;
+}
+
+
+.box{
+    background-color: teal;
+    width: 130px;
+    height: 130px;
+    border-right: 1px solid #000;
+    border-radius: 7px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+
+.div{
+    border:2px solid red;
+    padding: 30px;
+    
+}
+
+.form{
+    border:2px solid red;
+    padding: 30px;
+}
+
+
+.btn{
+    padding: 12px 20px;
+    border:2px solid red;
+    
+}
+
+button{
+    padding: 10px;
+    background-color: lime;
+}
