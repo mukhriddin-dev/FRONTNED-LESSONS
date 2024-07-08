@@ -16,7 +16,7 @@ wrapperBox.addEventListener("click", (e) => {
         // console.log(e.target);
         // console.log(e.target.tagName);
         // console.log(e.target.nodeName);
-        // console.log(`Box  ${e.target.textContent} sub  clicked`);
+        console.log(`Box  ${e.target.textContent} sub  clicked`);
         console.log(e.target.getAttribute("data-id"));
         
     }
