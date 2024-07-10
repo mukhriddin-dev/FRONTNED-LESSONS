@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "title": "titles smthSSSS",
+      "body": "bodys smthSSSS",
+      "id": "1720591314984"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "full_name": "Muhammaddiyor",
+      "age": 22
+    }
+  ]
+}

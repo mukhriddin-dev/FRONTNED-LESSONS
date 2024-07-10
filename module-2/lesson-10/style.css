@@ -1,0 +1,28 @@
+.list-item{
+    position: relative;
+}
+
+.list-item .dropdown{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-wrapper{
+    background-color: rgba(0,0,0,0.7);
+    display: grid;
+    place-content: center;
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 99;
+    top:0;
+    display: none;
+}
+
+.modal-content{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
