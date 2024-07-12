@@ -1,0 +1,117 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/images/vaf.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <title>All-movies</title>
+</head>
+<body>
+
+
+
+<header class="bg-[#900C3F]">
+
+   <div class="container mx-auto">
+
+     <nav class="flex justify-between items-center h-[70px]">
+
+         <a href="#" class="text-white text-2xl font-bold hidden sm:block">All-movies.uz</a>
+
+         <label>
+             <input id="search" type="search" placeholder="Enter film name" class="p-3 w-[95vw] mx-4 md:w-[520px] rounded-xl focus:ring-2 ring-white">
+         </label>
+
+             <ul class="gap-x-[32px] hidden sm:flex" >
+
+                 <li>
+                    <a href="./whishlist.html" id="liked" class="text-white flex gap-x-3 items-center ">
+                        <span><i class="bi bi-star text-xl"></i></span> <span id="like-count">0</span>
+                    </a>
+                 </li>
+
+                 <li>
+                     <input type="checkbox" id="theme">
+                 </li>
+
+                 <li>
+                    <select  id="lang" class="p-1 rounded-[32px]">
+                     <option>Russian</option>
+                     <option>English</option>
+                     <option>O'zbek</option>
+                    </select>
+                 </li>
+             </ul>
+
+     </nav>
+   </div>
+</header>
+
+<div class="toaster success" id="toast">
+
+   <div class="left">
+       <strong>Successfully added film</strong>
+       <p>Lorem ipsum dolor sit amet, consectetur...</p>
+   </div>
+
+    <span id="type">
+           <i class="bi bi-check-circle"></i>
+    </span>
+
+</div>
+
+<main class="flex">
+    <aside id="sidebar" class="bg-[#900c3f] w-[300px] min-h-screen pt-5">
+
+        <form action="#" class="p-3 text-white" id="search-form">
+
+          <label for="name">
+              <p>Enter film name</p>
+              <input class="form-input" id="name" type="search" placeholder="Enter film name">
+          </label>
+
+            <label for="rating">
+                <p>Enter film rating</p>
+                <input class="form-input" id="rating" type="number" placeholder="Enter film rating" min="1" max="10">
+            </label>
+
+            <label for="genres">
+                <p>Select film genres</p>
+                <select class="form-input"  id="genres">
+                    <option disabled selected>Select film genres</option>
+                </select>
+            </label>
+
+            <button type="submit" class="w-[90%] hover:bg-white focus:ring-4 ring-yellow-400 bg-[#F8DE22] text-black p-3 rounded-2xl">Search</button>
+
+        </form>
+    </aside>
+    <section class="grow p-4" id="contents">
+       <div class="container mx-auto">
+
+          <div class="grid grid-cols-5 gap-2" id="cards">
+<!--              dynamic rendering -->
+          </div>
+       </div>
+    </section>
+</main>
+
+<footer class="bg-[#900C3F] p-4">
+   <div class="container">
+       <p class="text-center text-white"> <span id="year">2024</span> All movies</p>
+   </div>
+</footer>
+
+
+
+</body>
+<script src="./js/db.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/index.js"></script>
+</html>
