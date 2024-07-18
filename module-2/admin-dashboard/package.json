@@ -1,0 +1,16 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"npx tailwindcss -i ./assets/styles/style.css -o ./assets/styles/buil.css --watch"
+  },
+  "keywords": [],
+  "author": "Mukhriddin",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
