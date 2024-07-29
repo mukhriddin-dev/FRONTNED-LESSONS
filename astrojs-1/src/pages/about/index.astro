@@ -1,0 +1,21 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Section from "../../layouts/section.astro";
+import MainLayout from "../../layouts/main-layout.astro";
+import image1 from "../../assets/images/image.jpg"
+
+
+---
+
+<MainLayout title="About page">
+
+  <Header />
+  <Section>
+    
+    <h1 class="text-center text-[82px] text-green-600">About</h1>
+    <img class="rounded-xl" src={image1.src} alt="">
+
+  </Section>
+  <Footer />
+</MainLayout>

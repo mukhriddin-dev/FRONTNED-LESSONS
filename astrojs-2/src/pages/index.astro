@@ -1,0 +1,22 @@
+---
+import MainLayout from "@layouts/main-layout.astro";
+import Card from "@ui/card/index.astro";
+import CardGrid from "@components/containers/card-grid.astro";
+import { news } from "@mocks/data";
+---
+
+<MainLayout title="Bosh sahifa" extra="Main app">
+  <section>
+    <div class="container mx-auto">
+      <CardGrid>
+        {
+          news.length > 0 ? (
+            news?.map((item) => <Card data={item} />)
+          ) : (
+            <h1>NOT FOUND</h1>
+          )
+        }
+      </CardGrid>
+    </div>
+  </section>
+</MainLayout>

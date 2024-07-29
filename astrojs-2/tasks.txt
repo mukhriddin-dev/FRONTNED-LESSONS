@@ -1,0 +1,21 @@
+1. Layout+
+2. pages routing +
+3. Props+
+4. List renders+
+5. Conditioanl rendering +
+6. Data fetching +
+7. using Typescript ( interface / type ) +
+
+function test(a){
+   log(a)
+}
+
+test('11')
+test(12)
+test(44)
+
+// props -> properties -> hususiyatlar
+
+<header title="title" class="card" disabeld>
+
+<Header title="main page" test="asdffg" /> -> JSX

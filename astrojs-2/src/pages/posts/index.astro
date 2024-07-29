@@ -1,0 +1,22 @@
+---
+import MainLayout from "@layouts/main-layout.astro";
+import PostCard from "@ui/post-card/index.astro";
+import CardGrid from "@components/containers/card-grid.astro";
+import { BaseURL } from "@mocks/data";
+import type {TnewsType} from "@type/index"
+
+const response = await fetch(`${BaseURL}/posts`);
+const data = await response.json();
+
+---
+
+<MainLayout title="Postlar">
+  <section>
+    <div class="container mx-auto">
+      <h1>Posts</h1>
+      <CardGrid>
+        {data.length ?  data?.map((item: TnewsType) => <PostCard data={item} />) : <h1>NOT FOUND</h1>}
+      </CardGrid>
+    </div>
+  </section>
+</MainLayout>

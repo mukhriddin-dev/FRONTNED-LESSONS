@@ -1,0 +1,30 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import "../assets/style.css";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import Section from "../layout/section.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <ViewTransitions />
+  </head>
+  <body>
+
+    <Header />
+
+    <main>
+      <Section>
+        <h1 class="text-center text-[82px] text-blue-600">Home page</h1>
+      </Section>
+    </main>
+
+    <Footer />
+  </body>
+
