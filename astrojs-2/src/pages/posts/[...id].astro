@@ -1,0 +1,37 @@
+---
+import MainLayout from "@layouts/main-layout.astro";
+import { BaseURL } from "@mocks/data";
+
+export async function getStaticPaths() {
+
+  const response = await fetch(`${BaseURL}/posts`);
+  const data = await response.json();
+
+
+  return data.map((item:any) => {
+    return {
+      params: { id:item?.id },
+      props: { title:item?.title , body:item.body },
+    };
+  });
+}
+
+const { title, body } = Astro.props;
+
+---
+
+<MainLayout title="Post item">
+    <section>
+      <div class="container mx-auto">
+     <div class="flex justify-between w-full my-4">
+      <h1>Posts item</h1> <a href="/posts" class="bg-red-500 px-3 py-2 rounded-3xl">go back</a>
+     </div>
+        <div class="p-4 bg-indigo-100 m-4 rounded-lg">
+          <h1 class="font-bold">{title}</h1>
+        </div>
+        <div class="p-4 bg-red-100 m-4 rounded-lg">
+          <p>{body}</p>
+        </div>
+      </div>
+    </section>
+</MainLayout>
