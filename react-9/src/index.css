@@ -1,0 +1,18 @@
+.card{
+    width: 300px;
+
+}
+
+.card h1{
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    gap: 20px;
+}

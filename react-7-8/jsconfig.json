@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["./src/*"],
+            "@components/*": ["./src/components/*"],
+            "@ui/*": ["./src/components/ui/*"],
+            "@layouts/*": ["./src/components/layouts/*"],
+            "@form/*":["./src/components/form/*"],
+            "@images/*": ["./src/assets/images/*"],
+            "@icons/*": ["./src/assets/icons/*"],
+            "@mocks/*": ["./src/mocks/*"],
+            "@utils/*": ["./src/utils/*"],
+        }
+    }
+}
