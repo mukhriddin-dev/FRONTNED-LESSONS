@@ -1,0 +1,15 @@
+nav{
+    height: 70px;
+}
+
+a{
+    color:#ffff;
+}
+
+main{
+    min-height: calc(100vh - 70px - 40px);
+}
+
+section{
+    padding: 40px;
+}
