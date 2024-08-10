@@ -11,8 +11,6 @@ const App = () => {
  
 const reducer = (state, action) => {
 
-console.log("AC: ",action)
-
  switch(action.type){
          case "INCREMENT" : return {...state, count: state.count + 1 };
          case 'DECREMENT' : return {...state, count: state.count - 1 };
@@ -24,15 +22,15 @@ console.log("AC: ",action)
 } }
 
 useEffect(()=>{
-fetch(`https://jsonplaceholder.typicode.com/comments`)
-.then((req)=>req.json())
-.then((res)=>{
 
-  dispatch( {type:'SET_POST', payload:res})
-  dispatch({type:'STOP_LOAD'})
-  dispatch({type:'SET_LENGTH', payload:res.length})
-  
-})
+fetch(`https://jsonplaceholder.typicode.com/comments`)
+     .then((req)=>req.json())
+     .then((res)=>{
+        dispatch( {type:'SET_POST', payload:res})
+        dispatch({type:'STOP_LOAD'})
+        dispatch({type:'SET_LENGTH', payload:res.length})
+     })
+
 }, [])
 
 
