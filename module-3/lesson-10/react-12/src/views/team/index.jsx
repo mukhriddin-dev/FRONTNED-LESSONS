@@ -1,11 +1,11 @@
 import "./style.scss"
 
-const index = () => {
+ const index = () => {
     return (
         <div className=" bg-indigo-400 text-white">
           <div className="container">
                <div className="p-8">
-                   <h1 className="text-[52px]">Home</h1> 
+                   <h1 className="text-[52px]">Team</h1> 
                </div>
           </div>
         </div>
@@ -13,3 +13,4 @@ const index = () => {
 };
 
 export default index;
+
