@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  text-align: center;
+  
+  tbody {
+    tr {
+      height: 50px !important;
+      cursor: pointer !important;
+
+      &:hover {
+        background-color: rgba(163, 146, 223, 0.312) !important;
+      }
+
+      &:nth-child(odd) {
+        background-color: rgba(189, 171, 255, 0.123) !important;
+      }
+    }
+  }
+}

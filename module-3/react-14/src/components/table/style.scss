@@ -1,0 +1,13 @@
+table tbody tr{
+    height: 50px;
+    cursor: pointer;
+}
+
+table tbody tr:hover{
+    background-color: rgba(163, 146, 223, 0.312);
+}
+
+table tbody tr:nth-child(odd){
+    background-color: rgba(189, 171, 255, 0.123);
+}
+

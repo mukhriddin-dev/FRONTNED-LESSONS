@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["./src/*"],
+            "@components/*": ["./src/components/*"],
+            "@ui/*": ["./src/components/ui/*"],
+            "@layouts/*": ["./src/components/layouts/*"],
+            "@form/*":["./src/components/form/*"],
+            "@images/*": ["./src/assets/images/*"],
+            "@icons/*": ["./src/assets/icons/*"],
+            "@mocks/*": ["./src/mocks/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@layout/*": ["./src/layouts/*"],
+            "@pages/*": ["./src/pages/*"],
+            "@routers/*": ["./src/router/*"],
+            "@service/*": ["./src/service/*"],
+            "@reducer/*": ["./src/reducer/*"],
+        }
+    }
+}

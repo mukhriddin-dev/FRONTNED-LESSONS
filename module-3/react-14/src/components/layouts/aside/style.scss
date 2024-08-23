@@ -1,0 +1,30 @@
+aside {
+  nav {
+    padding: 2px;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .item {
+        padding: 8px 16px;
+        background: rgba(99, 101, 241, 0.074);
+        border-radius: 6px;
+        cursor: pointer;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+          background: rgb(54, 56, 181);
+        }
+      }
+    }
+  }
+}
+
+.active{
+  background: rgb(54, 56, 181) !important;
+}

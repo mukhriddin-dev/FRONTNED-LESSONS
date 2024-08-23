@@ -1,0 +1,34 @@
+{
+  "leads": [
+    {
+      "id": "1724388461657",
+      "customer": "Mukhriddin ",
+      "phone": "8990149998",
+      "email": "khodieff@gmail.com",
+      "status": true
+    },
+    {
+      "id": "1724389281289",
+      "customer": "test2",
+      "phone": "8990149998",
+      "email": "test2@mail.uz",
+      "status": true
+    },
+    {
+      "id": "1724389991403",
+      "customer": "ewqrgstdytf",
+      "phone": "wergeqrg4er",
+      "email": "wretdytf@wedfwe.uz",
+      "status": true,
+      "cutomer": "test"
+    },
+    {
+      "id": "1724413479347",
+      "customer": "app",
+      "phone": "23453",
+      "email": "apps",
+      "status": true,
+      "cutomer": "test"
+    }
+  ]
+}

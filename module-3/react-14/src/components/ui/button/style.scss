@@ -1,0 +1,12 @@
+button{
+    padding: 8px 16px;
+    border: 1px solid transparent;
+  box-shadow: 0 0  3px silver;
+  border-radius: 6px;
+}
+
+button:focus{
+    border: 1px solid indigo;
+    background-color: #000000;
+    color:#fff;
+}
