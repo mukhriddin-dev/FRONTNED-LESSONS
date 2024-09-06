@@ -1,0 +1,12 @@
+.card{
+    width: 300px;
+    height: 450px;
+    background: #fff;
+    border: 1px solid gray;
+    margin: 4px;
+    cursor: pointer;
+
+    &-body{
+        padding: 12px;
+    }
+}
